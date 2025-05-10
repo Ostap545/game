@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&family=Mea+Culpa&family=Sixtyfour+Convergence&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Almendra", serif;
+    user-select: none;
+}
+
+body{
+    background: url(img/a.jpeg);
+    background-size: cover;
+}
+
+
+.coin{
+    position:absolute;
+    height: 150px;
+
+}
+
+.tri{
+    height: 60px;
+    border: 5px solid #ffffff;
+    width: 60px;
+    right: 100px;
+    position: absolute; 
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fdf9fc;
+    font-weight: bold;
+    top: 30px;
+    animation: 20s border infinite;
+    border-radius: 7px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.311);
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* df aic jcc */
+}
+.modal {
+    background: white;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    position: relative;
+
+}
+
+.modal:hover{
+
+    transform: scale(115%);
+
+}
+
+
+.bt {
+    padding: 20px 40px;
+    background: #ffb7ea;
+    border:none;
+    margin-top: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.bt:hover {
+    background: #da88c2;
+}
+
+@keyframes border {
+    0% {
+        border-color: rgb(0, 55, 255);
+    }
+    10% {
+        border-color: rgb(0, 255, 234);
+    }
+    30% {
+        border-color: rgb(255, 140, 0);
+    }
+    30% {
+        border-color: rgb(255, 0, 238);
+    }
+    40% {
+        border-color: rgb(251, 255, 0);
+    }
+    50% {
+        border-color: rgb(17, 255, 0);
+    }
+    60% {
+        border-color: rgb(255, 0, 0);
+    }
+   70% {
+        border-color: rgb(85, 255, 0);
+    }
+    80% {
+        border-color: rgb(0, 110, 255);
+    }
+    90% {
+        border-color: rgb(255, 200, 0);
+    }
+    
+    100% {
+        border-color: rgb(0, 55, 255);
+    }
+}
+
+
+
+
+
+#coin-status {
+     height: 30px;
+     
+}
+
+
+
+
+
+.wrapper2{
+    align-items: start;
+    top: -100vh;
+    transition: 0.3s;
+    background: linear-gradient(rgba(0, 0, 0, 0.311),rgba(0, 0, 0, 0));
+
+}
+
+.modal2 {
+    width: 300px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+
+@keyframes textColor{
+    0%{
+        color: #da88c2;
+    }
+    25%{
+        color: silver;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: aqua;
+    }
+    100%{
+        color: #da88c2;
+    }
+}
+
+.title{
+    animation: 10s textColor infinite; 
+}
+
+.parent{
+    display: flex;
+}
+.name-btn{
+    background:linear-gradient(45deg,  rgb(198, 255, 202),rgb(244, 255, 204));
+    padding: 10px 30px;
+    border: none;
+}
+.del{
+    display: none;
+    background: red;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* df jcc aic */
+    margin-left: 30px;
+    border-radius: 7px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.del:hover{
+    background: black;
+}
+
+.btn-settings{
+   position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: transparent;
+    border-radius: 100px;
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-info {
+    right: 60px;
+}
+.btn-settings:hover{
+    background: rgb(209, 209, 209);
+}
+.modal-settings{
+    display:none;
+}
+.back-to-main-menu{
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    border: none;
+    background: transparent;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+
+}
+.back-to-main-menu:hover{
+    background: rgb(211, 210, 210);
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: linear-gradient(45deg, rgb(255, 124, 124),rgb(74, 74, 255));
+    border: none;
+    border-radius: 5px;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.music:hover{
+    transform: scale(110%);
+}
+.input-name{
+    padding: 10px;
+    outline: none;
+
+}
+.photo-bg{
+    width: 70px;
+height: 45px;
+border: 2px solid #ffffff;
+transition: 0.2s;
+border: 2px solid white;
+border-radius: 4px;
+}
+
+.text-bg{
+    margin-top: 20px;
+}
+
+.wrapper3{
+    display:none;
+}
+.table, td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 5px;
+    
+}
+
+
+.table{
+    margin-top: 8px;
+}
